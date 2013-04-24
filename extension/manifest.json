@@ -10,8 +10,17 @@
 		"128": "icons/icon-128.png"
 	},
 
+	"background": {
+		"scripts": ["javascripts/background.js"]
+	},
+
 	"content_scripts": [{
 		"matches": ["*://www.lds.org/scriptures*"],
-		"js": ["javascripts/scriptures.js"]
-	}]
+		"css": ["stylesheets/scriptures.css"],
+		"js": ["lib/jquery-2.0.0.min.js",
+						"javascripts/scriptures.js"]
+	}],
+
+	"permissions": ["tabs", "*://www.lds.org/scriptures*"],
+	"minimum_chrome_version": "26"
 }
