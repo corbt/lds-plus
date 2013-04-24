@@ -1,0 +1,17 @@
+{
+	"name": "LDS Scripture Browser",
+	"version": "0.1",
+	"manifest_version": 2,
+
+	"description": "Browse the scriptures on LDS.org more easily",
+	"icons": {
+		"16": "icons/icon-16.png",
+		"48": "icons/icon-48.png",
+		"128": "icons/icon-128.png"
+	},
+
+	"content_scripts": [{
+		"matches": ["*://www.lds.org/scriptures*"],
+		"js": ["javascripts/scriptures.js"]
+	}]
+}

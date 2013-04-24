@@ -1,0 +1,211 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/kyle/proj/lds_plus/.gitignore",
+		"/home/kyle/proj/cs236/proj5/test/tests.txt",
+		"/home/kyle/proj/cs236/proj5/test/spec/ex62.txt",
+		"/home/kyle/proj/cs236/proj5/test/spec/ex61.txt",
+		"/home/kyle/proj/cs236/proj5/test/spec/ex60.txt",
+		"/home/kyle/proj/cs236/proj5/test/tester",
+		"/home/kyle/proj/cs236/proj3/test/in1.txt",
+		"/home/kyle/proj/cs236/proj5/test/dfs.txt",
+		"/home/kyle/proj/cs236/proj4/test/natj2.txt",
+		"/home/kyle/proj/cs236/proj4/test/crossp",
+		"/home/kyle/proj/cs236/proj3/test/output/out1.txt",
+		"/home/kyle/proj/cs236/proj3/test/exception2.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept5.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept4.2.txt",
+		"/home/kyle/proj/cs236/proj3/test/contents.txt",
+		"/home/kyle/proj/cs236/proj3/test/select.txt",
+		"/home/kyle/proj/cs236/proj5/test/ex50.txt",
+		"/home/kyle/proj/cs236/tester",
+		"/home/kyle/proj/cs236/proj3/test/accept3.2.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept4.1.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept3.1.txt",
+		"/home/kyle/proj/cs236/proj3/in1_output.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept3.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept2.txt",
+		"/home/kyle/proj/cs236/proj3/test/accept1.txt",
+		"/home/kyle/proj/cs236/proj3/src/Database.cpp",
+		"/home/kyle/proj/cs236/proj3/sample/in1.txt",
+		"/home/kyle/proj/cs236/proj3/sample/select.txt",
+		"/home/kyle/proj/cs/240/indexer/Records/Records.xml",
+		"/home/kyle/proj/corbify/Gemfile",
+		"/home/kyle/work/alba/Gemfile",
+		"/home/kyle/proj/corbify/config/deploy.rb",
+		"/home/kyle/proj/corbify/.gitignore",
+		"/home/kyle/work/alba/config/deploy.rb",
+		"/home/kyle/proj/corbify/.rvmrc",
+		"/home/kyle/proj/corbify/config/database.yml",
+		"/home/kyle/proj/cs/240/indexer/db/reset_db.sql",
+		"/home/kyle/work/alba/.rvmrc",
+		"/home/kyle/work/alba/Capfile",
+		"/home/kyle/work/alba/Gemfile.lock",
+		"/home/kyle/proj/cs/index.html",
+		"/home/kyle/proj/cs/240/indexer/Records/knowndata/1890_first_names.txt",
+		"/home/kyle/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/kyle/work/alba/db/schema.rb",
+		"/home/kyle/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/kyle/proj/cs/236/proj2/in21.txt",
+		"/home/kyle/proj/cs/236/proj2/out2.txt",
+		"/home/kyle/proj/cs/236/proj1/TestFile1",
+		"/home/kyle/proj/cs/236/proj1/TestFile6",
+		"/home/kyle/proj/cs/236/proj1/TestFile5",
+		"/home/kyle/proj/cs/236/proj1/lab1.zip",
+		"/usr/share/applications/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(.*\\n)*?(^.*\\?.*(\\n  .*)*)",
+			"(.*\\n)*(^.*\\?.*(\\n  .*)*)(.*\\n)*",
+			"(.*\\n)*(^.*\\?.*(\\n  .*)*)",
+			"(^.*\\?.*(\\n  .*)*)",
+			"^.*\\?",
+			"\\n",
+			"databa",
+			"copy_env",
+			"copy_data",
+			"/usr/local/nginx",
+			"bundle",
+			"web",
+			"gedit.",
+			"\\n\\n",
+			"white_space",
+			"whitespace",
+			"[0-9][0-9].\\s*",
+			"\\s"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"$2",
+			"$2(\\n)",
+			"$2 \\n",
+			"$2",
+			"$2\\n",
+			"$2",
+			"$1",
+			"\\\\n",
+			"/opt/nginx",
+			"sublime.",
+			"\\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 160.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true
+}
