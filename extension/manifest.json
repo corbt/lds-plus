@@ -10,10 +10,6 @@
 		"128": "icons/icon-128.png"
 	},
 
-	"background": {
-		"scripts": ["javascripts/background.js"]
-	},
-
 	"content_scripts": [{
 		"matches": ["*://www.lds.org/scriptures*"],
 		"css": ["stylesheets/scriptures.css"],

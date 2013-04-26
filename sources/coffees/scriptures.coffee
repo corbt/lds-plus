@@ -1,16 +1,16 @@
 class Scriptures
 	constructor: ->
-		@bar = $('.filed-under')
-		chrome.runtime.sendMessage {file: "stylesheets/scriptures.css"}, (response) ->
-			console.log response
-
+		@bars = $('.filed-under')
+		@static_bar = $(@bars[1])
+		@dynamic_bar = $(@bars[0])
 		@bind()
 
 	bind: ->
 		@bind_shortcuts()
+		@bind_updates()
 
 	bind_shortcuts: ->
-		$('body').on "keypress", "input, textarea", (e) ->
+		$('body').on "keypress", "input, textarea, [contenteditable]", (e) ->
 			e.stopPropagation()
 
 		$(document).keypress (e) =>
@@ -19,10 +19,26 @@ class Scriptures
 				when 47 then console.log "/" # "/"
 				when 58 then @seek_verse() # ":"
 
+	bind_updates: ->
+		@static_bar.on "keyup", (e) =>
+			@dynamic_bar.html @static_bar.children().clone()
+
+		@dynamic_bar.on "keyup", (e) =>
+			@static_bar.html @dynamic_bar.children().clone()
+
 	seek_verse: ->
 		li = $('<li>').addClass('ldsp').addClass('verse')
-		verse = $('<input>')
-		@bar.append li.append(verse.focus())
+		verse = $('<div>')
+		verse.attr "contenteditable", "true"
+		verse.addClass "bar_input"
+		#verse.on "keyup", (e) =>
+		#	@auto_size $(e.target)
+		@bars.append li.append(verse)
+		verse.focus()
+
+	auto_size: (target) ->
+		console.log "changed"
+		target.css 'width', target.val().length*7+20
 
 $ ->
 	if $('.filed-under').length > 0

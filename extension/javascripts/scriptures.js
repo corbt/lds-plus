@@ -4,23 +4,21 @@
 
   Scriptures = (function() {
     function Scriptures() {
-      this.bar = $('.filed-under');
-      chrome.runtime.sendMessage({
-        file: "stylesheets/scriptures.css"
-      }, function(response) {
-        return console.log(response);
-      });
+      this.bars = $('.filed-under');
+      this.static_bar = $(this.bars[1]);
+      this.dynamic_bar = $(this.bars[0]);
       this.bind();
     }
 
     Scriptures.prototype.bind = function() {
-      return this.bind_shortcuts();
+      this.bind_shortcuts();
+      return this.bind_updates();
     };
 
     Scriptures.prototype.bind_shortcuts = function() {
       var _this = this;
 
-      $('body').on("keypress", "input, textarea", function(e) {
+      $('body').on("keypress", "input, textarea, [contenteditable]", function(e) {
         return e.stopPropagation();
       });
       return $(document).keypress(function(e) {
@@ -34,12 +32,31 @@
       });
     };
 
+    Scriptures.prototype.bind_updates = function() {
+      var _this = this;
+
+      this.static_bar.on("keyup", function(e) {
+        return _this.dynamic_bar.html(_this.static_bar.children().clone());
+      });
+      return this.dynamic_bar.on("keyup", function(e) {
+        return _this.static_bar.html(_this.dynamic_bar.children().clone());
+      });
+    };
+
     Scriptures.prototype.seek_verse = function() {
       var li, verse;
 
       li = $('<li>').addClass('ldsp').addClass('verse');
-      verse = $('<input>');
-      return this.bar.append(li.append(verse.focus()));
+      verse = $('<div>');
+      verse.attr("contenteditable", "true");
+      verse.addClass("bar_input");
+      this.bars.append(li.append(verse));
+      return verse.focus();
+    };
+
+    Scriptures.prototype.auto_size = function(target) {
+      console.log("changed");
+      return target.css('width', target.val().length * 7 + 20);
     };
 
     return Scriptures;

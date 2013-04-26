@@ -1,9 +1,7 @@
 .ldsp {
-	&.verse {
-		margin-left: 1px !important;
-		padding: 0px !important;
-		input {
-			width: 20px;
-		}
+	.bar_input {
+		outline: 0px solid transparent;
+		min-width: 15px;
+		padding-left: 4px;
 	}
 }
