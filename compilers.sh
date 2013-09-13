@@ -11,8 +11,8 @@ COFFEE_PID=$!
 sass --watch sources/sasses/:extension/stylesheets &>> compile.log &
 SASS_PID=$!
 
+# Terminate compilers on exit 
+trap 'echo "Terminating..." && kill $COFFEE_PID $SASS_PID' INT
+
 # Watch both logs
 tail -f compile.log
-
-# Terminate compilers on exit 
-trap "kill $COFFEE_PID SASS_PID" INT
