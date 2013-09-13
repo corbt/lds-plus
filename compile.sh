@@ -8,6 +8,11 @@ if [ "$#" -eq 1 ]
  				rm extension/stylesheets/*.css extension/javascripts/*.js
 				exit
 		fi
+		if [ "$1" == "pack" ]
+			then
+				zip -r extension.zip extension
+				exit
+		fi
 fi
 echo "Starting compilers..."
 
