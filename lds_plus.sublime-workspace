@@ -5,18 +5,57 @@
 		[
 		]
 	},
+	"buffers":
+	[
+		{
+			"file": "sources/coffees/scriptures.coffee",
+			"settings":
+			{
+				"buffer_size": 1070,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sources/sasses/scriptures.scss",
+			"settings":
+			{
+				"buffer_size": 101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "extension/stylesheets/scriptures.css",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		}
+	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
 				"pack",
-				"Preferences: Browse Packages"
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa ins",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 392.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -33,6 +72,12 @@
 	},
 	"file_history":
 	[
+		"/home/kyle/proj/lds_plus/extension/manifest.json",
+		"/home/kyle/proj/lds_plus/sources/sasses/scriptures.scss",
+		"/home/kyle/proj/lds_plus/sources/coffees/background.coffee",
+		"/home/kyle/proj/lds_plus/extension/stylesheets/scriptures.css",
+		"/home/kyle/proj/lds_plus/extension/stylesheets/scriptures_plus.css",
+		"/home/kyle/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/kyle/proj/lds_plus/.gitignore",
 		"/home/kyle/proj/cs236/proj5/test/tests.txt",
 		"/home/kyle/proj/cs236/proj5/test/spec/ex62.txt",
@@ -77,7 +122,6 @@
 		"/home/kyle/proj/cs/240/indexer/Records/knowndata/1890_first_names.txt",
 		"/home/kyle/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/kyle/work/alba/db/schema.rb",
-		"/home/kyle/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/kyle/proj/cs/236/proj2/in21.txt",
 		"/home/kyle/proj/cs/236/proj2/out2.txt",
 		"/home/kyle/proj/cs/236/proj1/TestFile1",
@@ -146,6 +190,97 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sources/coffees/scriptures.coffee",
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								785,
+								785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sources/sasses/scriptures.scss",
+					"settings":
+					{
+						"buffer_size": 101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "extension/stylesheets/scriptures.css",
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
 	"incremental_find":
 	{
 		"height": 0.0
@@ -191,6 +326,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"scscss",
+				"sources/sasses/scriptures.scss"
+			]
 		],
 		"width": 0.0
 	},
