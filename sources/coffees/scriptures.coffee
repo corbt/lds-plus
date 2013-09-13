@@ -15,9 +15,14 @@ class Scriptures
 
 		$(document).keypress (e) =>
 			e.preventDefault()
+			console.log e.keyCode
 			switch e.keyCode
 				when 47 then console.log "/" # "/"
 				when 58 then @seek_verse() # ":"
+				when 106
+					window.location=$('li.prev').children().first().attr("href")
+				when 107
+					window.location=$('li.next').children().first().attr("href")
 
 	bind_updates: ->
 		@static_bar.on "keyup", (e) =>
