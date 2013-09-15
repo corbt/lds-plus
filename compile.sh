@@ -13,6 +13,8 @@ if [ "$#" -eq 1 ]
 				zip -r extension.zip extension
 				exit
 		fi
+		echo "Unrecognized option $1. Valid options are \"clean\" or \"pack\"."
+		exit 1
 fi
 echo "Starting compilers..."
 
