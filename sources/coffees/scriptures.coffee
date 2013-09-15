@@ -23,6 +23,8 @@ class Scriptures
 					window.location=$('li.prev').children().first().attr("href")
 				when 107
 					window.location=$('li.next').children().first().attr("href")
+				when 48
+					$('#context-bar,#saveAndShareToolbar').toggle()
 
 	bind_updates: ->
 		@static_bar.on "keyup", (e) =>
@@ -47,5 +49,4 @@ class Scriptures
 
 $ ->
 	if $('.filed-under').length > 0
-		console.log "loaded"
 		new Scriptures
