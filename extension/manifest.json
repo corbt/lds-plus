@@ -1,6 +1,6 @@
 {
 	"name": "LDS Scripture Browser",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"manifest_version": 2,
 
 	"description": "Browse the scriptures on LDS.org more easily",
@@ -13,9 +13,12 @@
 	"content_scripts": [{
 		"matches": ["*://www.lds.org/scriptures*"],
 		"css": ["stylesheets/scriptures.css"],
-		"js": ["lib/jquery-2.0.0.min.js",
-						"javascripts/scriptures.js"]
+		"js": ["javascripts/loader.js"]
 	}],
+
+	"web_accessible_resources": [
+		"javascripts/scriptures.js"
+	],
 
 	"permissions": ["tabs", "*://www.lds.org/scriptures*"],
 	"minimum_chrome_version": "26"

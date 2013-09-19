@@ -4,6 +4,7 @@ class Scriptures
 		@static_bar = $(@bars[1])
 		@dynamic_bar = $(@bars[0])
 		@bind()
+		$('.studyNoteMarker').hide()
 
 	bind: ->
 		@bind_shortcuts()
@@ -19,12 +20,13 @@ class Scriptures
 			switch e.keyCode
 				when 47 then console.log "/" # "/"
 				when 58 then @seek_verse() # ":"
-				when 106
-					window.location=$('li.prev').children().first().attr("href")
 				when 107
+					window.location=$('li.prev').children().first().attr("href")
+				when 106
 					window.location=$('li.next').children().first().attr("href")
 				when 48
-					$('#context-bar,#saveAndShareToolbar').toggle()
+					console.log "hiding"
+					$('#toggle-study-tools-bar,#toggle-context-bar').click()
 
 	bind_updates: ->
 		@static_bar.on "keyup", (e) =>
