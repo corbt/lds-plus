@@ -1,4 +1,4 @@
-lds_plus
+lds-plus
 ========
 
 Helpers for the lds.org site
