@@ -4,7 +4,7 @@ class Scriptures
 		@static_bar = $(@bars[1])
 		@dynamic_bar = $(@bars[0])
 		@bind()
-		$('.studyNoteMarker').hide()
+		# $('.studyNoteMarker').hide()
 
 	bind: ->
 		@bind_shortcuts()
