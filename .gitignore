@@ -10,4 +10,6 @@
 # Compiled files
 extension/javascripts/*.js
 extension/stylesheets/*.css
-sources/coffees/*.js
+
+node_modules/
+data/*.json
