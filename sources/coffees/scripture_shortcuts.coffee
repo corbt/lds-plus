@@ -1,5 +1,6 @@
 class Scriptures
 	constructor: ->
+		console.debug "loaded scripture shortcuts"
 		@bars = $('.filed-under')
 		@static_bar = $(@bars[1])
 		@dynamic_bar = $(@bars[0])
@@ -49,6 +50,5 @@ class Scriptures
 		console.log "changed"
 		target.css 'width', target.val().length*7+20
 
-$ ->
-	if $('.filed-under').length > 0
-		new Scriptures
+if $('.filed-under').length > 0
+	new Scriptures

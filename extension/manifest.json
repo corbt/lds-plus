@@ -17,7 +17,7 @@
 	}],
 
 	"web_accessible_resources": [
-		"javascripts/scriptures.js"
+		"javascripts/scripture_shortcuts.js"
 	],
 
 	"permissions": ["tabs", "*://www.lds.org/scriptures*"],
